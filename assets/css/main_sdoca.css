@@ -1,0 +1,46 @@
+.card-body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.card {
+    box-shadow: 1px 0px 9px #b2b2b3;
+}
+
+.card .card-header {
+    line-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 50px;
+}
+
+.card-body-total {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main-navbar {
+    background-color: rgb(110, 110, 246);
+}
+
+
+.nav-link {
+    font-size: 12px;
+}
+
+
+a.link- {
+    text-decoration: none;
+
+}
+
+
+.section {
+    margin-top: 20px;
+}
+
+.text-white {
+    color: #fff;;
+}
+

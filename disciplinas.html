@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>SDOCA &mdash; SCHOOL</title>
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
+
+  <!-- CSS Libraries -->
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  
+  <!-- Sdoca styled -->
+  <link rel="stylesheet" href="assets/css/main_sdoca.css">
+
+<!-- Start GA -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-94034622-3');
+</script>
+<!-- /END GA --></head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <form class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+          </ul>
+          <div class="search-element">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="250">
+            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+            <div class="search-backdrop"></div>
+           
+          </div>
+        </form>
+        <ul class="navbar-nav navbar-right">
+         
+
+
+
+          <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+            <img alt="image" src="assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+            
+            <div class="d-sm-none d-lg-inline-block">Hi, Ujang Maman</div></a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-title">Logged in 5 min ago</div>
+              <a href="features-profile.html" class="dropdown-item has-icon">
+                <i class="far fa-user"></i> Profile
+              </a>
+              <a href="features-activities.html" class="dropdown-item has-icon">
+                <i class="fas fa-bolt"></i> Activities
+              </a>
+              <a href="features-settings.html" class="dropdown-item has-icon">
+                <i class="fas fa-cog"></i> Settings
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="index.html">SDOCA</a>
+          </div>
+          <div class="sidebar-brand sidebar-brand-sm">
+            <a href="index.html">SD</a>
+          </div>
+          <ul class="sidebar-menu">
+           
+            <li class="">
+              <a href="/" class="nav-link "><i class="fas fa-home"></i><span>INICIO</span></a>
+            </li>
+            <li class="">
+              <a href="alunos.html" class="nav-link "><i class="fas fa-user"></i><span>ALUNOS</span></a>
+            </li>
+            <li class="active">
+              <a href="disciplinas.html" class="nav-link "><i class="fas fa-book"></i><span >DISCIPLINAS</span></a>
+            </li>
+
+            <li class="">
+              <a href="cursos.html" class="nav-link "><i class="fas fa-book"></i><span >CURSOS</span></a>
+            </li>
+
+            <li class="">
+              <a href="certificados.html" class="nav-link "><i class="fas fa-certificate"></i><span>CERTIFICADOS</span></a>
+            </li>
+
+            <li class="">
+              <a href="escolas.html" class="nav-link "><i class="fas fa-school"></i><span>ESCOLAS</span></a>
+            </li>
+    
+            <li class="">
+              <a href="lancamentosDeNotas.html" class="nav-link "><i class="fas fa-rocket"></i><span >LANCAMENTOS DE NOTA</span></a>
+            </li>
+
+
+            
+
+          
+           
+    
+          </ul>
+
+        </aside>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+         
+
+          <div class="section-body">
+            <div class="mb-4 d-flex flex-wrap align-items-center" style='justify-content:space-between;'>
+                <div class="">
+                    <button data-toggle="modal" data-target="#formstudent" id="btn-addstudent" class="btn btn-sm btn-primary" style='padding: 8px;'>
+                        <i class="fas fa-plus"></i>
+                        Adicionar
+                    </button>
+                </div>
+
+                <div class="col-md-10">
+                    <input placeholder="Digite o nome do aluno..." wire:model.live='searchStudent' class="form-control" style='margin-left:12px;'/>
+                </div>
+            </div>
+            <table class="table ">
+                <thead class="thead-dark bg-primary text-white">
+                  <tr>
+                    <th scope="col" class="text-white">Nº</th>
+                    <th scope="col" class="text-white">DISCIPLINA</th>
+                    <th scope="col" class="text-white">CURSO</th>
+                    
+                              
+                    <th scope="col" class="text-white" style="text-align: center;">OPÇÕES</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    
+                    <td>INFORMÁTICA</td>
+                    <td>INFORMÁTICA</td>
+
+                 
+                    <td style="text-align: center;">
+                        <button class="btn">
+                           
+                            <img src="assets/img/mais.png" alt="">
+                        </button>
+
+                        <button class="btn">
+                            
+                            <img src="assets/img/caixote-de-lixo.png" alt="">
+                        </button>
+                    </td>
+                    
+                  
+
+
+                </tr>
+
+                  
+                
+                 
+                </tbody>
+              </table>
+              
+             
+          
+          </div>
+        </section>
+      </div>
+
+      <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauval.in/">Muhamad Nauval Azhar</a>
+        </div>
+        <div class="footer-right">
+          
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- General JS Scripts -->
+  <script src="assets/modules/jquery.min.js"></script>
+  <script src="assets/modules/popper.js"></script>
+  <script src="assets/modules/tooltip.js"></script>
+  <script src="assets/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="assets/modules/moment.min.js"></script>
+  <script src="assets/js/stisla.js"></script>
+  
+  <!-- JS Libraies -->
+
+  <!-- Page Specific JS File -->
+  
+  <!-- Template JS File -->
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>
