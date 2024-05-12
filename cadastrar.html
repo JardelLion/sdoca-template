@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>SDOCA &mdash; SCHOOL</title>
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
+
+  <!-- CSS Libraries -->
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  
+  <!-- Sdoca styled -->
+  <link rel="stylesheet" href="assets/css/main_sdoca.css">
+
+<!-- Start GA -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-94034622-3');
+</script>
+<!-- /END GA --></head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <form class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+          </ul>
+          <div class="search-element">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="250">
+            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+            <div class="search-backdrop"></div>
+           
+          </div>
+        </form>
+        <ul class="navbar-nav navbar-right">
+         
+
+
+
+          <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+            <img alt="image" src="assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+            
+            <div class="d-sm-none d-lg-inline-block">Hi, Ujang Maman</div></a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-title">Logged in 5 min ago</div>
+              <a href="features-profile.html" class="dropdown-item has-icon">
+                <i class="far fa-user"></i> Profile
+              </a>
+              <a href="features-activities.html" class="dropdown-item has-icon">
+                <i class="fas fa-bolt"></i> Activities
+              </a>
+              <a href="features-settings.html" class="dropdown-item has-icon">
+                <i class="fas fa-cog"></i> Settings
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="index.html">SDOCA</a>
+          </div>
+          <div class="sidebar-brand sidebar-brand-sm">
+            <a href="index.html">SD</a>
+          </div>
+          <ul class="sidebar-menu">
+           
+            <li class="active">
+              <a href="/" class="nav-link "><i class="fas fa-home"></i><span>INICIO</span></a>
+            </li>
+            <li class="">
+              <a href="alunos.html" class="nav-link "><i class="fas fa-user"></i><span>ALUNOS</span></a>
+            </li>
+            <li class="">
+              <a href="disciplinas.html" class="nav-link "><i class="fas fa-book"></i><span >DISCIPLINAS</span></a>
+            </li>
+
+            <li class="">
+              <a href="cursos.html" class="nav-link "><i class="fas fa-book"></i><span >CURSOS</span></a>
+            </li>
+
+            <li class="">
+              <a href="certificados.html" class="nav-link "><i class="fas fa-certificate"></i><span>CERTIFICADOS</span></a>
+            </li>
+
+            <li class="">
+              <a href="escolas.html" class="nav-link "><i class="fas fa-school"></i><span>ESCOLAS</span></a>
+            </li>
+    
+            <li class="">
+              <a href="lancamentosDeNotas.html" class="nav-link "><i class="fas fa-rocket"></i><span >LANCAMENTOS DE NOTA</span></a>
+            </li>
+
+
+            
+
+          
+           
+    
+          </ul>
+
+        </aside>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+
+            <h1 style="text-align:center;">Cadastrar Cliente</h1>
+            <!-- ======= form cadastrar ======= -->
+           
+            <form class="row g-3">
+                <h4 class="col-md-12">Dados Pessoais</h4>
+                <div class="col-md-6 mb-4">
+                    <label for="nomeCompelto" class="form-label">Nome completo</label>
+                    <input type="text" class="form-control" id="nomeCompelto" name="nomeCompleto" required>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <label for="conhecidoPor" class="form-label">Conhecido Por</label>
+                    <input type="text" class="form-control" id="conhecidoPor"
+                    name="conhecidoPor">
+                </div>
+
+
+
+                <div class="col-md-4 mb-4">
+                    <label for="estadoCivil" class="form-label">Estado Civil</label>
+
+                    <select class="form-select form-control" aria-label="Default select"
+                    id="estadoCivil" name="estadoCivil" required>
+                        <option value="" selected>Open this select menu</option>
+                        <option value="1">Solteiro</option>
+                        <option value="2">Casado</option>
+                        
+                      </select>
+                   
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <label for="pai" class="form-label">Pai</label>
+                    <input type="text" class="form-control" id="pai"
+                    name="pai" required>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <label for="mae" class="form-label">Mãe</label>
+                    <input type="text" class="form-control" id="mae"
+                    name="mae" required>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <label for="dataNascimento" class="form-label">Data de nascimento</label>
+                    <input type="date" class="form-control" id="dataNascimento" name="dataNascimento"
+                    required>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <label for="naturalidade" class="form-label">Naturalidade</label>
+                    <input type="text" class="form-control" id="naturalidade"
+                    name="naturalidade" required>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <label for="provincia" class="form-label">Província</label>
+                    <input type="text" class="form-control" id="provincia"
+                    name="provincia" required>
+                </div>
+
+                <!-- ======= BI part ======= -->
+
+                <div class="col-md-4 mb-4">
+                    <label for="numberoBi" class="form-label">N-BI</label>
+                    <input type="text" class="form-control" id="numberoBi"
+                    name="numberoBi" required>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <label for="emissaoBi" class="form-label">Data de Emissão BI</label>
+                    <input type="date" class="form-control" id="emissaoBi"
+                    name="emissaoBi" required>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <label for="fotoBi" class="form-label">Scan or Foto BI</label>
+                    <input type="file" class="form-control" id="fotoBi"
+                    name="fotoBi" required>
+                </div>
+
+                <!-- ======= end BI part ======= -->
+
+
+                <!-- ======= residencia part ======= -->
+                <h4 class="col-md-12">Residência</h4>
+                <div class="col-md-3 mb-4">
+                    <label for="emissaoBi" class="form-label">Residência - Rua</label>
+                    <input type="text" class="form-control" id="emissaoBi"
+                    name="emissaoBi" required>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <label for="emissaoBi" class="form-label">Residência - Edifício</label>
+                    <input type="text" class="form-control" id="emissaoBi"
+                    name="emissaoBi" required>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <label for="emissaoBi" class="form-label">Residência - Número de casa/Apartamento/Porta</label>
+                    <input type="text" class="form-control" id="emissaoBi"
+                    name="emissaoBi" required>
+                </div>
+
+                <div class="col-md-12 mb-4">
+                    <label for="emissaoBi" class="form-label">Residência - Bairro</label>
+                    <input type="text" class="form-control" id="emissaoBi"
+                    name="emissaoBi" required>
+                </div>
+
+
+                <h4 class="col-md-12">Contactos</h4>
+                <div class="col-md-3 mb-4">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" id="telefone"
+                    name="telefone" required>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <label for="caixaPostal" class="form-label">Caixa Postal</label>
+                    <input type="text" class="form-control" id="caixaPostal"
+                    name="caixaPostal" required>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <label for="fax" class="form-label">Fax</label>
+                    <input type="text" class="form-control" id="fax"
+                    name="fax" required>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email"
+                    name="email" required>
+                </div>
+               
+
+                <!-- ======= end residencia part ======= -->
+
+                <!-- ======= profissao part ======= -->
+                <h4 class="col-md-12">Dados Profissionais</h4>
+                <div class="col-md-3 mb-4">
+                    <label for="profissao" class="form-label">Profissão</label>
+                    <input type="text" class="form-control" id="profissao"
+                    name="profissao" required>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <label for="nivelAcademico" class="form-label">Nível Académico</label>
+                    <select class="form-select form-control" aria-label="Default select"
+                    id="nivelAcademico" name="nivelAcademico" required>
+                        <option value="" selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+
+                   
+                </div>
+                <div class="col-md-3 mb-4">
+                    <label for="curso" class="form-label">Curso</label>
+                    <input type="text" class="form-control" id="curso"
+                    name="curso" required>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <label for="localTrabalho" class="form-label">Local de Trabalho</label>
+                    <input type="text" class="form-control" id="localTrabalho"
+                    name="localTrabalho">
+                </div>
+
+
+                <!-- ======= end profissao part ======= -->
+
+
+
+                <!-- =======  cartao de leitor part ======= -->
+                <h4 class="col-md-12">Dados de Leitor</h4>
+                <div class="col-md-4 mb-4">
+                    <label for="cartaoLeitor" class="form-label">Número de cartão de Leitor</label>
+                    <input type="text" class="form-control" id="cartaoLeitor"
+                    name="cartaoLeitor" required>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <label for="fotoLeitor" class="form-label">Scan or foto de Leitor</label>
+                    <input type="file" class="form-control" id="fotoLeitor"
+                    name="fotoLeitor" required>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <label for="grupo" class="form-label">Grupo</label>
+                    <input type="text" class="form-control" id="grupo"
+                    name="grupo" required>
+                </div>
+
+                
+                
+                <!-- ======= end cartao de leitor part ======= -->
+
+                <div class="col-md-12 mb-4">
+                    <label for="tipoEscrisao" class="form-label">Tipo de Escrisão</label>
+
+                    <select class="form-select form-control" aria-label="Default select"
+                    id="tipoEscrisao" name="tipoEscrisao" required>
+                        <option value="" selected>Open this select menu</option>
+                        <option value="militante">Militante</option>
+                        <option value="simpatizante">Simpatizante</option>
+                        <option value="conselheiro">Conselheiro</option>
+                      </select>
+                    
+                </div>
+
+
+                <div class="col-md-4 mb-4">
+                    <label for="proponente" class="form-label">Proponente</label>
+                    <input type="text" class="form-control" id="proponente"
+                    name="proponente" required>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <label for="nucleo" class="form-label">Núcleo</label>
+                    <input type="text" class="form-control" id="nucleo"
+                    name="nucleo" required>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <label for="comuna" class="form-label">Comuna</label>
+                    <input type="text" class="form-control" id="comuna"
+                    name="comuna" required>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <label for="distrito" class="form-label">Distrito</label>
+                    <input type="text" class="form-control" id="distrito"
+                    name="distrito" required>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="municipio" class="form-label">Munícipio</label>
+                    <input type="text" class="form-control" id="municipio"
+                    name="municipio" required>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <label for="provincia2" class="form-label">Província</label>
+                    <input type="text" class="form-control" id="provincia2"
+                    name="provincia2" required>
+                </div>
+
+
+
+                
+                <div class="col-md-6 mb-4">
+                    <label for="dataIngresso" class="form-label">Data de Ingresso</label>
+                    <input type="date" class="form-control" id="dataIngresso" name="dataIgresso"
+                    required>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <label for="responsavel" class="form-label">Responsável</label>
+                    <input type="text" class="form-control" id="responsavel"
+                    name="responsavel" required>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                
+                
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">
+                      Cadastrar
+                    </button>
+                  </div>
+                  
+            </form>
+          
+              <!-- ======= end form cadastrar ======= -->
+         
+
+          <div class="section-body">
+          
+          </div>
+        </section>
+      </div>
+
+
+
+
+
+      <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; 2024 <div class="bullet"></div> Design By <a href="#">Jarde Lion</a>
+        </div>
+        <div class="footer-right">
+          
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- General JS Scripts -->
+  <script src="assets/modules/jquery.min.js"></script>
+  <script src="assets/modules/popper.js"></script>
+  <script src="assets/modules/tooltip.js"></script>
+  <script src="assets/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="assets/modules/moment.min.js"></script>
+  <script src="assets/js/stisla.js"></script>
+  
+  <!-- JS Libraies -->
+
+  <!-- Page Specific JS File -->
+  
+  <!-- Template JS File -->
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>
